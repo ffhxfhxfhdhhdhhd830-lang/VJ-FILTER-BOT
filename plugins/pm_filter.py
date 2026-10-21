@@ -1859,7 +1859,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1876,7 +1876,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.CLONE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1897,7 +1897,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.ALL_FILTERS.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1913,7 +1913,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.GFILTER_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1949,7 +1949,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1968,7 +1968,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.ABOUT_TXT.format(temp.U_NAME, temp.B_NAME, OWNER_LNK),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1983,7 +1983,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.SUBSCRIPTION_TXT.format(REFERAL_PREMEIUM_TIME, temp.U_NAME, query.from_user.id, REFERAL_COUNT),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1999,7 +1999,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.MANUELFILTER_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2014,7 +2014,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.BUTTON_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2029,7 +2029,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.AUTOFILTER_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2044,7 +2044,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.CONNECTION_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2060,7 +2060,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.ADMIN_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2076,7 +2076,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.FILE_STORE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2092,7 +2092,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.RENAME_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2108,7 +2108,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.STREAM_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2124,7 +2124,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.EXTRAMOD_TXT.format(OWNER_LNK, CHNL_LNK),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2153,7 +2153,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         stats3 = mydb.command('dbStats')
         used_dbSize3 = (stats3['dataSize']/(1024*1024))+(stats3['indexSize']/(1024*1024))
         free_dbSize3 = 512-used_dbSize3
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.STATUS_TXT.format((int(filesp)+int(totalsec)), total_users, totl_chats, filesp, round(used_dbSize, 2), round(free_dbSize, 2), totalsec, round(used_dbSize2, 2), round(free_dbSize2, 2), round(used_dbSize3, 2), round(free_dbSize3, 2)),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2183,7 +2183,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         stats3 = mydb.command('dbStats')
         used_dbSize3 = (stats3['dataSize']/(1024*1024))+(stats3['indexSize']/(1024*1024))
         free_dbSize3 = 512-used_dbSize3
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.STATUS_TXT.format((int(filesp)+int(totalsec)), total_users, totl_chats, filesp, round(used_dbSize, 2), round(free_dbSize, 2), totalsec, round(used_dbSize2, 2), round(free_dbSize2, 2), round(used_dbSize3, 2), round(free_dbSize3, 2)),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2212,7 +2212,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.SHORTLINK_INFO),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2228,7 +2228,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.TELE_TXT),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2253,7 +2253,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.YTDL_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2269,7 +2269,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.SHARE_TXT),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2285,7 +2285,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.SONG_TXT),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2310,7 +2310,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=script.JSON_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2326,7 +2326,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.STICKER_TXT),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2342,7 +2342,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.TAMIL_INFO),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2358,7 +2358,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.ENGLISH_INFO),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2374,7 +2374,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.HINDI_INFO),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2390,7 +2390,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.TELUGU_INFO),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2406,7 +2406,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.MALAYALAM_INFO),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2422,7 +2422,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.URDU_INFO),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2438,7 +2438,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.BANGLADESH_INFO),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2454,7 +2454,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.KANNADA_INFO),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -2470,7 +2470,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(btn)
-        await query.message.edit_text(
+        await query.message.edit_caption(
             text=(script.GUJARATI_INFO),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
